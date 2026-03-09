@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 280px;
+    background: #080b10;
+    color: #e8edf5;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .dot {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: #00e5ff;
+    box-shadow: 0 0 10px #00e5ff;
+  }
+  .status-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #0e1219;
+    border: 1px solid #1e2535;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; }
+  .online  { background: #22c55e; box-shadow: 0 0 6px #22c55e; }
+  .offline { background: #ff4444; box-shadow: 0 0 6px #ff4444; }
+  .desc {
+    font-size: 11px;
+    color: #5a6a80;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .steps {
+    font-size: 11px;
+    color: #99aabb;
+    line-height: 1.8;
+    border-top: 1px solid #1e2535;
+    padding-top: 12px;
+  }
+  .steps strong { color: #00e5ff; }
+  .version {
+    margin-top: 14px;
+    font-size: 10px;
+    color: #2a3545;
+    text-align: right;
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+<div class="logo"><div class="dot"></div> AIRIA</div>
+
+<div class="status-row">
+  <div class="status-dot" id="sdot"></div>
+  <span id="stext">Checking API...</span>
+</div>
+
+<div class="desc">
+  AI-powered email intelligence — triage, reply drafting and task extraction directly inside Gmail.
+</div>
+
+<div class="steps">
+  <strong>How to use:</strong><br/>
+  1. Open any email in Gmail<br/>
+  2. Look for the Airia bar at the top<br/>
+  3. Click Triage, Draft Reply, or Tasks<br/>
+  4. Results appear inline instantly
+</div>
+
+<div class="version">v1.0.0 · Airia Everywhere</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
